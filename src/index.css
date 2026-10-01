@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-page: #FCFBF8;
+    --text-primary: #1C1C1E;
+    --text-secondary: #57575A;
+    --brand-orange: #EA580C;
+    --brand-orange-hover: #C2410C;
+    --border-light: #E7E5E0;
+    --card-bg: #FFFFFF;
+    --card-subtle: #F6F5F2;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    line-height: 1.6;
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+  }
+}
+
+/* Subtle, clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F5F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8D6D0;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3A19B;
+}
+
+/* Elegant glass nav */
+.nav-blur {
+  background-color: rgba(252, 251, 248, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
